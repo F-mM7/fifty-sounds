@@ -1,0 +1,50 @@
+* {
+  font-size: xxx-large;
+}
+.box {
+  display: block;
+  width: 72px;
+  /*コレ*/
+  display: flex;
+  /*コレ*/
+  align-items: flex-end;
+}
+/* .symbol { */
+/* align-items: center; */
+/* vertical-align: bottom; */
+/* margin: 0 auto; */
+/* } */
+.small {
+  font-size: xx-large;
+}
+
+#display {
+  display: flex;
+  flex-direction: row;
+}
+
+/* ==== base ==== */
+
+html {
+  touch-action: manipulation;
+}
+
+/* animation */
+.correct {
+  animation-name: correct;
+  animation-duration: 1s;
+}
+.incorrect {
+  animation-name: incorrect;
+  animation-duration: 1s;
+}
+@keyframes correct {
+  0% {
+    background-color: green;
+  }
+}
+@keyframes incorrect {
+  0% {
+    background-color: maroon;
+  }
+}
