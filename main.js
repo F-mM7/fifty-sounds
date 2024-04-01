@@ -57,7 +57,6 @@ function setQuestion() {
     if (is_handaku) symbol.innerText += handakuten;
     box.appendChild(symbol);
     display.appendChild(box);
-    question_number.innerText = n;
   }
 
   draw_table();

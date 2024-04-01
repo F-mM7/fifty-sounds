@@ -1,5 +1,5 @@
 :root {
-  --unit-grid: min(calc(99vw / 12), calc(99vh / 9));
+  --unit-grid: min(calc(98vw / 11), calc(98vh / 9));
 }
 
 * {
@@ -7,9 +7,6 @@
 }
 .small {
   font-size: calc(var(--unit-grid) * 0.7);
-}
-#question_number {
-  font-size: 12px;
 }
 
 canvas,
