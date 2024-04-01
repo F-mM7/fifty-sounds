@@ -15,7 +15,7 @@ function draw_cell(i, j) {
 }
 
 function draw_table() {
-  ctx.clearRect(0, 0, 660, 300);
+  ctx.clearRect(0, 0, size * H, size * W);
   for (let i = 0; i < H; ++i) for (let j = 0; j < W; ++j) draw_cell(i, j);
 }
 
