@@ -9,7 +9,8 @@
   font-size: calc(var(--unit-grid) * 0.8);
 }
 
-canvas {
+canvas,
+input {
   width: calc(var(--unit-grid) * 11);
   /* height: calc(var(--unit-grid) * 11); */
 }
