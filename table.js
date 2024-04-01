@@ -1,3 +1,6 @@
+const H = 11;
+const W = 5;
+
 const char_list =
   "あいうえおかきくけこさしすせそたちつてとなにぬねのはひふへほまみむめもや　ゆ　よらりるれろわ　　　をん";
 
@@ -49,9 +52,6 @@ for (let i = 0; i < 51; ++i) {
   if (char_list[i] == "　") continue;
   coord[char_list[i]] = [Math.floor(i / 5), i % 5];
 }
-
-const H = 11;
-const W = 5;
 
 let stroke = Array(H)
   .fill()

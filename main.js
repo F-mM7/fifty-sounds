@@ -1,5 +1,7 @@
-const ctx = table.getContext("2d");
+const ctx = canvas.getContext("2d");
 const size = 96;
+canvas.width = size * H;
+canvas.height = size * W;
 
 let n;
 
@@ -80,9 +82,9 @@ answer.addEventListener("submit", (e) => {
   e.preventDefault();
   if (judge()) {
     setQuestion();
-    giveCorrectClass(question, true);
+    giveCorrectClass(canvas, true);
   } else {
-    giveCorrectClass(question, false);
+    giveCorrectClass(canvas, false);
   }
   answer.text.value = "";
 });

@@ -1,8 +1,9 @@
 :root {
-  --unit-grid: min(calc(97vw / 11), calc(97vh / 9));
+  --unit-grid: min(calc(99vw / 11), calc(99vh / 9));
 }
 
 * {
+  box-sizing: border-box;
   font-size: var(--unit-grid);
 }
 .small {
@@ -12,22 +13,13 @@
 canvas,
 input {
   width: calc(var(--unit-grid) * 11);
-  /* height: calc(var(--unit-grid) * 11); */
 }
 
 .box {
-  display: block;
-  width: calc(var(--unit-grid) * 1.5);
-  /*コレ*/
   display: flex;
-  /*コレ*/
   align-items: flex-end;
+  width: calc(var(--unit-grid) * 1.5);
 }
-/* .symbol { */
-/* align-items: center; */
-/* vertical-align: bottom; */
-/* margin: 0 auto; */
-/* } */
 
 #display {
   display: flex;
