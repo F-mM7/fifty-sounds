@@ -1,9 +1,22 @@
-* {
-  font-size: xxx-large;
+:root {
+  --unit-grid: min(calc(99vw / 12), calc(99vh / 9));
 }
+
+* {
+  font-size: var(--unit-grid);
+}
+.small {
+  font-size: calc(var(--unit-grid) * 0.8);
+}
+
+canvas {
+  width: calc(var(--unit-grid) * 11);
+  /* height: calc(var(--unit-grid) * 11); */
+}
+
 .box {
   display: block;
-  width: 72px;
+  width: calc(var(--unit-grid) * 1.5);
   /*コレ*/
   display: flex;
   /*コレ*/
@@ -14,9 +27,6 @@
 /* vertical-align: bottom; */
 /* margin: 0 auto; */
 /* } */
-.small {
-  font-size: xx-large;
-}
 
 #display {
   display: flex;

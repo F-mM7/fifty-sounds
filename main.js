@@ -1,5 +1,5 @@
 const ctx = table.getContext("2d");
-const size = 60;
+const size = 96;
 
 let n;
 
