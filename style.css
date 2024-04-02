@@ -7,6 +7,17 @@
   font-size: var(--unit-grid);
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.content {
+  margin: auto;
+  margin-top: calc(var(--unit-grid) * 0.5);
+}
+
 .small {
   font-size: calc(var(--unit-grid) * 0.7);
 }
