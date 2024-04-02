@@ -1,5 +1,5 @@
 :root {
-  --unit-grid: min(calc(99vw / 11), calc(99vh / 9));
+  --unit-grid: min(calc(99vw / 11), calc(99vh / 10));
 }
 
 * {
