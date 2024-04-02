@@ -6,13 +6,18 @@
   box-sizing: border-box;
   font-size: var(--unit-grid);
 }
+
 .small {
   font-size: calc(var(--unit-grid) * 0.7);
 }
 
-canvas,
+canvas {
+  width: calc(var(--unit-grid) * 11);
+}
+
 input {
   width: calc(var(--unit-grid) * 11);
+  height: var(--unit-grid);
 }
 
 .box {
